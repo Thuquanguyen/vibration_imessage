@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "957712033277",
+    "project_id": "vibration-imessage",
+    "storage_bucket": "vibration-imessage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957712033277:android:e855d22f9a35ee85e6a594",
+        "android_client_info": {
+          "package_name": "com.vibrator.massage.ai.phone_vibration_imessage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957712033277-tnn117mpvnsutgnmtsdc8qg6ldqi7n5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUSNcVnqZ7VvWIylBhWKNLhmiLvKrx4CY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957712033277-tnn117mpvnsutgnmtsdc8qg6ldqi7n5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
