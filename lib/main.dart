@@ -9,19 +9,24 @@ import 'core/common/app_func.dart';
 import 'core/service/notification_service.dart';
 import 'core/theme/app_themes.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-
+import 'package:firebase_core/firebase_core.dart';
 import 'routes/app_pages.dart';
 import 'utils/app_loading.dart';
 
 void main() {
+  Future<InitializationStatus> _initGoogleMobileAds() {
+    // TODO: Initialize Google Mobile Ads SDK
+    return MobileAds.instance.initialize();
+  }
+
   void initApp() async {
     WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
     FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-    // await Firebase.initializeApp();
+    await Firebase.initializeApp();
     FlutterNativeSplash.remove();
     NotificationService().initializePlatformNotifications();
     AppFunc.initLoadingStyle();
-    MobileAds.instance.initialize();
+    await _initGoogleMobileAds();
   }
 
   runZonedGuarded(() async {
