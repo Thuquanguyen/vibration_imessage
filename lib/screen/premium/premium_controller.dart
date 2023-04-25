@@ -23,7 +23,7 @@ class PremiumController extends BaseController {
         unit: 'Monthly',
         price: '289.000 đ',
         isSelected: true),
-    PackageModel(title: 'Best Price', unit: 'Lifetime', price: '579.000 đ'),
+    PackageModel(title: 'Best Price', unit: 'Year', price: '579.000 đ'),
   ].obs;
   RxInt indexSelected = 1.obs;
 
@@ -94,7 +94,7 @@ class PremiumController extends BaseController {
     }else if(indexSelected.value == 1){
       return 'You have 1 month to use the advanced features of the app. In addition, you get an additional 10 days discount.';
     }
-    return 'You get to use advanced features for life.';
+    return 'You get to use advanced features for 1 year.';
   }
 
   Future<void> buy() async {
