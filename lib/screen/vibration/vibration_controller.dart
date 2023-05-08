@@ -512,7 +512,7 @@ class VibrationController extends BaseController {
           isLoadAds.value = true;
         },
         onAdFailedToLoad: (ad, err) {
-          print('Failed to load a banner ad: ${err.message}');
+          print('Failed to load a banner ad: ${err.message} - ${ad.adUnitId}');
           ad.dispose();
         },
       ),

@@ -387,13 +387,6 @@
             </list>
           </value>
         </entry>
-        <entry key="flutter_native_timezone">
-          <value>
-            <list>
-              <option value="$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/flutter_native_timezone-2.0.0/lib" />
-            </list>
-          </value>
-        </entry>
         <entry key="flutter_plugin_android_lifecycle">
           <value>
             <list>
@@ -1242,7 +1235,6 @@
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/flutter_local_notifications_linux-3.0.0+1/lib" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/flutter_local_notifications_platform_interface-6.0.0/lib" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/flutter_native_splash-2.2.19/lib" />
-      <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/flutter_native_timezone-2.0.0/lib" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.9/lib" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/flutter_screenutil-5.7.0/lib" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/flutter_share_me-1.4.0/lib" />
