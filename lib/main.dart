@@ -14,10 +14,6 @@ import 'routes/app_pages.dart';
 import 'utils/app_loading.dart';
 
 void main() {
-  Future<InitializationStatus> _initGoogleMobileAds() {
-    // TODO: Initialize Google Mobile Ads SDK
-    return MobileAds.instance.initialize();
-  }
 
   void initApp() async {
     WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -26,7 +22,7 @@ void main() {
     FlutterNativeSplash.remove();
     NotificationService().initializePlatformNotifications();
     AppFunc.initLoadingStyle();
-    await _initGoogleMobileAds();
+    await MobileAds.instance.initialize();
   }
 
   runZonedGuarded(() async {

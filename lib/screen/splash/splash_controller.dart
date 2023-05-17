@@ -33,7 +33,7 @@ class SplashController extends BaseController {
     DateFormat dateFormat = DateFormat("yyyy-MM-dd HH:mm:ss");
     String? data = await SharePreferencesHelper.getString(KEY_PURCHASE);
     bool isWelcome = await SharePreferencesHelper.getBool(KEY_WELCOME) ?? false;
-    if (data == null) {
+    if (data == null || data == 'null') {
       AppFunc.setTimeout(() {
         IAPConnection().isAvailable = false;
         Get.offAndToNamed(!isWelcome ? Routes.WELCOME : Routes.MAIN);

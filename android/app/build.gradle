@@ -48,7 +48,7 @@ android {
         applicationId "com.vibrator.massage.ai.phone_vibration_imessage"
         minSdkVersion 20
         targetSdkVersion flutter.targetSdkVersion
-        versionCode 13
+        versionCode 14
         versionName "1.0.0"
         multiDexEnabled true
         ndk {
@@ -74,13 +74,8 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation platform('com.google.firebase:firebase-bom:31.3.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
-    implementation 'com.google.android.gms:play-services-ads:22.0.0'
     implementation 'com.android.support:multidex:1.0.3'
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'
     implementation 'androidx.window:window:1.0.0'
     implementation 'androidx.window:window-java:1.0.0'
-}
-
-configurations.all {
-    exclude group: 'com.google.android.gms', module: 'play-services-safetynet'
 }

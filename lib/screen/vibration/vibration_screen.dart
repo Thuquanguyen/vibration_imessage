@@ -70,7 +70,7 @@ class VibrationScreen extends GetView<VibrationController> {
                         visible: controller.isLoadAds.value,
                       )),
                 SizedBox(
-                  height: 40.h,
+                  height: 10.h,
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 100.w),

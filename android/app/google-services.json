@@ -1,38 +1,54 @@
 {
   "project_info": {
-    "project_number": "790462884750",
-    "project_id": "vibration-imessage-5d43b",
-    "storage_bucket": "vibration-imessage-5d43b.appspot.com"
+    "project_number": "957712033277",
+    "project_id": "vibration-imessage",
+    "storage_bucket": "vibration-imessage.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:790462884750:android:9104b66979012859d652df",
+        "mobilesdk_app_id": "1:957712033277:android:e855d22f9a35ee85e6a594",
         "android_client_info": {
           "package_name": "com.vibrator.massage.ai.phone_vibration_imessage"
         }
       },
       "oauth_client": [
         {
-          "client_id": "790462884750-jrehn6duo6scclf92bgvbf3er64lnat4.apps.googleusercontent.com",
+          "client_id": "957712033277-km5bgqvdavkqso02o843mhkifp9tqejs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vibrator.massage.ai.phone_vibration_imessage",
+            "certificate_hash": "b1fc8fc6d973450a1f918b736aa106b9852de85d"
+          }
+        },
+        {
+          "client_id": "957712033277-tnn117mpvnsutgnmtsdc8qg6ldqi7n5l.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAfo2fRcxFdSFjj58YgA_SRRjbN30uxG8o"
+          "current_key": "AIzaSyAUSNcVnqZ7VvWIylBhWKNLhmiLvKrx4CY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "790462884750-jrehn6duo6scclf92bgvbf3er64lnat4.apps.googleusercontent.com",
+              "client_id": "957712033277-tnn117mpvnsutgnmtsdc8qg6ldqi7n5l.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "957712033277-4k5dv8dqmt02dff62l9sansb0485hdvh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.massage.vibrator.ai"
+              }
             }
           ]
         }
-      }
+      },
+      "admob_app_id": "ca-app-pub-8786339512646303~9224022749"
     }
   ],
   "configuration_version": "1"
