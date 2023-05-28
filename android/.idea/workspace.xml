@@ -4,39 +4,23 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d93a321c-887c-4afc-84e4-232971a9b54b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/../.flutter-plugins" afterDir="false" />
+    <list default="true" id="e3f89b0e-a514-4a36-929f-8491961e1a05" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vibration_imessage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vibration_imessage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/app-release.aab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/app-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.aab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_breeze.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_breeze.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_dotted.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_dotted.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_dramatic.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_dramatic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_dry.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_dry.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_expand.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_expand.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_heart.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_heart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_heavy.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_heavy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_magic.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_magic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_refresh.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_refresh.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_rise.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_rise.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_snow.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_snow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_sunny.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_sunny.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_tingle.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_tingle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_warn.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_warn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/img_wave.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/img_wave.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/ad_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/ad_manager.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/screen/splash/splash_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/splash/splash_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/core/theme/app_themes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/core/theme/app_themes.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/core/theme/textstyles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/core/theme/textstyles.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/screen/vibration/vibration_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/vibration/vibration_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.yaml" afterDir="false" />
     </list>
@@ -45,7 +29,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RF8TB0VA2CD]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/macbook/.android/avd/Pixel_4_API_31.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -60,10 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2Psk0c6Yzz7nBW5L4GBO1PaRWfi" />
+  <component name="ProjectId" id="2QH1ePDK24RR6clLIXPrPUK237w" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -78,7 +59,7 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "memory.settings.postsync.last.time.stamp": "1684252968411",
+    "memory.settings.postsync.last.time.stamp": "1684995812674",
     "show.migrate.to.gradle.popup": "false"
   },
   "keyToStringList": {
@@ -150,12 +131,23 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d93a321c-887c-4afc-84e4-232971a9b54b" name="Changes" comment="" />
-      <created>1684252954988</created>
+      <changelist id="e3f89b0e-a514-4a36-929f-8491961e1a05" name="Changes" comment="" />
+      <created>1684995787893</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1684252954988</updated>
+      <updated>1684995787893</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

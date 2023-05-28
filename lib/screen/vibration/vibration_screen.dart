@@ -18,7 +18,6 @@ import '../../utils/touchable.dart';
 import 'package:filling_slider/filling_slider.dart';
 import '../../widget/item_music.dart';
 import '../../widget/item_vibration.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:rive/rive.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'vibration_controller.dart';
@@ -129,8 +128,6 @@ class VibrationScreen extends GetView<VibrationController> {
                                       //       height: 12.w),
                                       Text("High",
                                           style: TextStyles.label2.copyWith(
-                                              fontFamily:
-                                                  GoogleFonts.aleo().fontFamily,
                                               color:
                                                   controller.progress.value >=
                                                           0.8
@@ -145,8 +142,6 @@ class VibrationScreen extends GetView<VibrationController> {
                                       Text(
                                         "Medium",
                                         style: TextStyles.label2.copyWith(
-                                            fontFamily:
-                                                GoogleFonts.aleo().fontFamily,
                                             color:
                                                 controller.progress.value >= 0.5
                                                     ? Colors.white
@@ -156,8 +151,6 @@ class VibrationScreen extends GetView<VibrationController> {
                                       Text(
                                         "Low",
                                         style: TextStyles.label2.copyWith(
-                                            fontFamily:
-                                                GoogleFonts.aleo().fontFamily,
                                             color: controller.progress.value >=
                                                     0.08
                                                 ? Colors.white
