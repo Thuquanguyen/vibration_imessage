@@ -6,7 +6,6 @@ import '../../core/theme/dimens.dart';
 import '../../in_app_manage.dart';
 import 'main_controller.dart';
 
-
 class MainScreen extends GetView<MainController> {
   const MainScreen({Key? key}) : super(key: key);
   final bool isActive = true;
@@ -16,7 +15,7 @@ class MainScreen extends GetView<MainController> {
     return WillPopScope(
       onWillPop: () async => false,
       child: Obx(() => Scaffold(
-        backgroundColor: Colors.white,
+          backgroundColor: Colors.white,
           drawerEdgeDragWidth: 0,
           body: IndexedStack(
             children: controller.menuPages,

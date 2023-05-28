@@ -18,6 +18,7 @@ class SplashScreen extends GetView<SplashController> {
     }
     return AppScaffold(
       color: Color.fromRGBO(245, 245, 245, 1),
+      paddingTop: 0,
       body: Container(
           child: ImageHelper.loadFromAsset(
         AppAssets.icSplat,
