@@ -6,6 +6,7 @@ import 'package:just_audio/just_audio.dart';
 
 import '../audio_player.dart';
 import '../core/assets/app_assets.dart';
+import '../core/common/app_func.dart';
 import '../core/common/imagehelper.dart';
 import '../core/model/music_model.dart';
 import '../core/theme/textstyles.dart';
@@ -32,14 +33,21 @@ class ItemMusic extends StatelessWidget {
         } else {
           if ((index ?? 0) != 3 && !IAPConnection().isAvailable) {
             if ((index ?? 0) >= 6 && !AudioPlayerVibration().player.playing) {
-              controller?.rewardedAd?.show(onUserEarnedReward: (a, b) {
-                controller?.changeSelectedMusic((index ?? 0) - 1);
-                musicModel?.onTab?.call();
-                AudioPlayerVibration().currentUrl =
-                    musicModel?.path ?? AppAssets.musicCover1;
-                AudioPlayerVibration()
-                    .playAudio(title: musicModel?.title ?? '');
-              });
+              AppFunc.showAlertDialogConfirm(context,
+                  message: 'Do you want to listen to this song? If yes, please unlock or watch ads.',
+                  callBack: () {
+                    goToScreen(PremiumScreen());
+                  },
+                  cancelCallback: () {
+                    controller?.rewardedAd?.show(onUserEarnedReward: (a,b){
+                      controller?.changeSelectedMusic((index ?? 0) - 1);
+                      musicModel?.onTab?.call();
+                      AudioPlayerVibration().currentUrl =
+                          musicModel?.path ?? AppAssets.musicCover1;
+                      AudioPlayerVibration()
+                          .playAudio(title: musicModel?.title ?? '');
+                    });
+                  });
             } else {
               int i = ((index ?? 0) > 3) ? (index! - 1) : index!;
               controller?.changeSelectedMusic(i);

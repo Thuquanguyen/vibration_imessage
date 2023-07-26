@@ -208,9 +208,9 @@ class VibrationScreen extends GetView<VibrationController> {
               Touchable(
                   onTap: () async {
                     Vibration.cancel();
-                    if (controller.interstitialAd != null && !IAPConnection().isAvailable) {
-                      controller.interstitialAd!.show();
-                    }
+                    // if (controller.interstitialAd != null && !IAPConnection().isAvailable) {
+                    //   controller.interstitialAd!.show();
+                    // }
                     // AppFunc.showAlertDialog(context,
                     //     title: 'Coming soon!',
                     //     message:

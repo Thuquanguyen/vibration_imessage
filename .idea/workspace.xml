@@ -5,15 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2697bf83-7544-49cb-a959-0dcf9288ceb6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/android/app/key/Untitled" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ads/app_lifecircle_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ads/open_app_ads_manage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/release/app-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/release/app-release.aab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screen/main/main_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/main/main_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screen/premium/premium_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/premium/premium_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screen/splash/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/splash/splash_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screen/welcome/welcome_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/welcome/welcome_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/release/app-release.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/release/output-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ad_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ad_manager.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/more/more_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/more/more_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/vibration/vibration_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/vibration/vibration_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/vibration/vibration_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/vibration/vibration_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/item_music.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/item_music.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/item_vibration.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/item_vibration.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +72,15 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/macbook/vibration_imessage/assets/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/macbook/vibration_imessage/android/app/key&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/android/app/key" />
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/assets/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
