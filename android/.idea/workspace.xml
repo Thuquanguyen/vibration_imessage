@@ -1,38 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidLayouts">
-    <shared>
-      <config />
-    </shared>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21323a15-0d9b-4b90-a313-cd28732287b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/key/Untitled" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lib/ads/app_lifecircle_factory.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lib/ads/open_app_ads_manage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.flutter-plugins" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.flutter-plugins-dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+    <list default="true" id="2172b730-1b61-42a1-960c-cfcfa5b266fe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/app-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.aab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/app-release.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/output-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/app-release.aab" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/ad_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/ad_manager.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/screen/more/more_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/more/more_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/screen/vibration/vibration_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/vibration/vibration_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/screen/vibration/vibration_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/vibration/vibration_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/widget/item_music.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/widget/item_music.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/widget/item_vibration.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/widget/item_vibration.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +37,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2SXue1jKci5iBc29Ocx0eI81HWH" />
+  <component name="ProjectId" id="2T92GzwHcVdafxVuGYSCv5l3Qf7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -72,7 +52,7 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "memory.settings.postsync.last.time.stamp": "1689305348257",
+    "memory.settings.postsync.last.time.stamp": "1690440900224",
     "show.migrate.to.gradle.popup": "false"
   },
   "keyToStringList": {
@@ -144,11 +124,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="21323a15-0d9b-4b90-a313-cd28732287b6" name="Changes" comment="" />
-      <created>1689305339041</created>
+      <changelist id="2172b730-1b61-42a1-960c-cfcfa5b266fe" name="Changes" comment="" />
+      <created>1690440883966</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1689305339041</updated>
+      <updated>1690440883966</updated>
     </task>
     <servers />
   </component>
