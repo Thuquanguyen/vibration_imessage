@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../ad_manager.dart';
 import '../../core/base/base_controller.dart';
+import '../meditate/meditate_screen.dart';
 import '../more/more_screen.dart';
 import '../music/music_screen.dart';
+import '../sleep/sleep_screen.dart';
 import '../vibration/vibration_screen.dart';
 import 'component/tab_nav.dart';
 import 'keep_alive_page.dart';
@@ -14,19 +16,29 @@ class MainController extends BaseController {
 
   final screensData = <ScreenModel>[
     ScreenModel(
-        name: "Vibration",
+        name: "Massage",
         screen: KeepAlivePage(child: const VibrationScreen()),
         navKey: 1,
         icon: Icons.vibration),
     ScreenModel(
-        name: "Music",
+        name: "Sounds",
         screen: KeepAlivePage(child: const MusicScreen()),
         navKey: 2,
-        icon: Icons.settings),
+        icon: Icons.music_note_outlined),
+    ScreenModel(
+        name: "Meditate",
+        screen: KeepAlivePage(child: const MeditateScreen()),
+        navKey: 3,
+        icon: Icons.ac_unit),
+    ScreenModel(
+        name: "Sleep",
+        screen: KeepAlivePage(child: const SleepScreen()),
+        navKey: 4,
+        icon: Icons.alarm_on_rounded),
     ScreenModel(
         name: "More",
         screen: KeepAlivePage(child: const MoreScreen()),
-        navKey: 3,
+        navKey: 5,
         icon: Icons.more_horiz),
   ];
 

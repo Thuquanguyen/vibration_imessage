@@ -17,6 +17,7 @@
     </queries>
    <application
         android:label="Vibrator Strong - iMassage U"
+       android:networkSecurityConfig="@xml/network_security_config"
         android:icon="@mipmap/ic_logo">
         <activity
             android:name=".MainActivity"
@@ -52,7 +53,7 @@
         </activity>
        <meta-data
            android:name="com.google.android.gms.ads.APPLICATION_ID"
-           android:value="ca-app-pub-5379224969805616~7218899171"/>
+           android:value="ca-app-pub-3813752684589876~9345344960"/>
 <!--           android:value="ca-app-pub-3940256099942544~3347511713"/>-->
        <meta-data
            android:name="com.google.android.gms.wallet.api.enabled"

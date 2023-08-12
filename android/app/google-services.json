@@ -1,39 +1,38 @@
 {
   "project_info": {
-    "project_number": "800938792889",
-    "project_id": "vibrator-strong---imassage-u",
-    "storage_bucket": "vibrator-strong---imassage-u.appspot.com"
+    "project_number": "581223297570",
+    "project_id": "vibrator-strong---imassa-b7fdc",
+    "storage_bucket": "vibrator-strong---imassa-b7fdc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:800938792889:android:eecb39f486d8ea863f8868",
+        "mobilesdk_app_id": "1:581223297570:android:a49d5ab8b9bc0464fb507b",
         "android_client_info": {
           "package_name": "com.vibrator.massage.ai.phone_vibration_imessage"
         }
       },
       "oauth_client": [
         {
-          "client_id": "800938792889-ikqohelkuffihp4uhma8pnb3f1vm9qu8.apps.googleusercontent.com",
+          "client_id": "581223297570-5kfn6fnfeoi9nlj40jhptvlvdte53vte.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDAc4G_PrlLrHFLmFcODaLkwz48yux096s"
+          "current_key": "AIzaSyBDgDkOOatbVWnMAwA2KYVbWnGG6q75Ga4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "800938792889-ikqohelkuffihp4uhma8pnb3f1vm9qu8.apps.googleusercontent.com",
+              "client_id": "581223297570-5kfn6fnfeoi9nlj40jhptvlvdte53vte.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
         }
-      },
-      "admob_app_id": "ca-app-pub-5379224969805616~7218899171"
+      }
     }
   ],
   "configuration_version": "1"

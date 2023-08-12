@@ -5,6 +5,8 @@ import '../screen/information/information_binding.dart';
 import '../screen/information/information_screen.dart';
 import '../screen/main/main_binding.dart';
 import '../screen/main/main_screen.dart';
+import '../screen/meditate/meditate_binding.dart';
+import '../screen/meditate/meditate_screen.dart';
 import '../screen/more/more_binding.dart';
 import '../screen/more/more_screen.dart';
 import '../screen/music/music_binding.dart';
@@ -15,6 +17,8 @@ import '../screen/premium/premium_binding.dart';
 import '../screen/premium/premium_screen.dart';
 import '../screen/privacy/privacy_binding.dart';
 import '../screen/privacy/privacy_screen.dart';
+import '../screen/sleep/sleep_binding.dart';
+import '../screen/sleep/sleep_screen.dart';
 import '../screen/splash/splash_binding.dart';
 import '../screen/splash/splash_screen.dart';
 import '../screen/term/term_binding.dart';
@@ -36,6 +40,16 @@ class AppPages {
       name: _Paths.SPLASH,
       page: () => SplashScreen(),
       binding: SplashBinding(),
+    ),
+    GetPage(
+      name: _Paths.MEDITATE,
+      page: () => MeditateScreen(),
+      binding: MeditateBinding(),
+    ),
+    GetPage(
+      name: _Paths.SLEEP,
+      page: () => SleepScreen(),
+      binding: SleepBinding(),
     ),
     GetPage(
       name: _Paths.VIBRATION,
