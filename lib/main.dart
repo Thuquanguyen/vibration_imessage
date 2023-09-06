@@ -1,32 +1,35 @@
 import 'dart:async';
+import 'package:phone_vibration_imessage/ad_manager.dart';
+import 'package:phone_vibration_imessage/applovin_manager.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter/material.dart';
+import 'package:phone_vibration_imessage/routes/app_pages.dart';
+import 'package:phone_vibration_imessage/utils/app_loading.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'core/app_translations.dart';
 import 'core/binding/root_binding.dart';
 import 'core/common/app_func.dart';
 import 'core/service/notification_service.dart';
 import 'core/theme/app_themes.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'routes/app_pages.dart';
-import 'utils/app_loading.dart';
+import 'package:applovin_max/applovin_max.dart';
 
 void main() {
 
   void initApp() async {
     WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
     FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-    await Firebase.initializeApp();
+    // await Firebase.initializeApp();
     FlutterNativeSplash.remove();
     NotificationService().initializePlatformNotifications();
     AppFunc.initLoadingStyle();
-    await MobileAds.instance.initialize();
   }
 
   runZonedGuarded(() async {
     initApp();
+    AppTranslations.init();
+    ApplovinManager().initializePlugin();
     initLoadingStyle();
     runApp(
       ScreenUtilInit(
@@ -42,11 +45,14 @@ void main() {
                 initialRoute: AppPages.INITIAL,
                 initialBinding: RootBinding(),
                 getPages: AppPages.routes,
-                locale: const Locale('en'),
+                locale: AppTranslations.fallbackLocale,
+                translations: AppTranslations(),
                 theme: AppThemes().general(),
-                builder: EasyLoading.init(builder: (context,child) => MediaQuery(
-                    data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
-                    child: child!))),
+                builder: EasyLoading.init(
+                    builder: (context, child) => MediaQuery(
+                        data:
+                            MediaQuery.of(context).copyWith(textScaleFactor: 1),
+                        child: child!))),
           );
         },
       ),

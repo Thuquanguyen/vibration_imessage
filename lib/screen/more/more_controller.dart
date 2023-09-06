@@ -5,31 +5,32 @@ import 'package:share_plus/share_plus.dart';
 
 import '../../ad_manager.dart';
 import '../../core/base/base_controller.dart';
+import '../../core/common/app_func.dart';
 import '../../core/model/vibration_model.dart';
 import '../../in_app_manage.dart';
+import '../../language/i18n.g.dart';
 import '../../routes/app_pages.dart';
 import '../../utils/app_utils.dart';
 import '../information/information_screen.dart';
 import '../not_vibration/not_vibration_screen.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class MoreController extends BaseController {
   List<VibrationModel> vibrations = [
     VibrationModel(
         iconData: Icons.info_outline,
-        title: 'Information',
+        title: I18n().informationStr.tr,
         onTap: () {
-          goToScreen(InformationScreen());
+          Get.toNamed(Routes.INFORMATION);
         }),
     VibrationModel(
         iconData: Icons.warning,
-        title: 'Not Vibrating?',
+        title: I18n().notVibrationStr.tr,
         onTap: () {
-          goToScreen(NotVibrationScreen());
+          Get.toNamed(Routes.NOT_VIBRATION);
         }),
     VibrationModel(
         iconData: Icons.feedback_outlined,
-        title: 'Send feedback',
+        title: I18n().sendFeedbackStr.tr,
         onTap: () async {
           final Email email = Email(
             body: 'Email body',
@@ -42,80 +43,24 @@ class MoreController extends BaseController {
         }),
     VibrationModel(
         iconData: Icons.restore,
-        title: 'Restore Purchase',
+        title: I18n().restorePurchaseStr.tr,
         onTap: () {
           IAPConnection.instance.restorePurchases();
         }),
     VibrationModel(
         iconData: Icons.share,
-        title: 'Share',
+        title: I18n().shareStr.tr,
         onTap: () {
           Share.share(
               "https://play.google.com/store/apps/details?id=com.flutter.flutter_app_vibrator_strong&hl=en&gl=US",
               subject: "Vibration strong: Vibrator App");
         }),
   ];
-
-
-  InterstitialAd? interstitialAd;
-  Rx<BannerAd> bannerAd = BannerAd(
-      size: AdSize(width: 0, height: 0),
-      adUnitId: AdManager.bannerAdUnitId,
-      listener: BannerAdListener(),
-      request: AdRequest())
-      .obs;
   RxBool isLoadAds = false.obs;
 
   @override
   void onInit() {
-    // TODO: implement onInit
-    loadBannerAds();
-    loadInterstitialAd();
     super.onInit();
   }
 
-  handleReward(){
-    interstitialAd?.show();
-    goToScreen(NotVibrationScreen());
-  }
-  void loadBannerAds(){
-    BannerAd(
-      adUnitId: AdManager.bannerAdUnitId,
-      request: AdRequest(),
-      size: AdSize.banner,
-      listener: BannerAdListener(
-        onAdLoaded: (ad) {
-          bannerAd.value = ad as BannerAd;
-          isLoadAds.value = true;
-        },
-        onAdFailedToLoad: (ad, err) {
-          print('Failed to load a banner ad: ${err.message}');
-          ad.dispose();
-        },
-      ),
-    ).load();
-  }
-
-  void loadInterstitialAd() {
-    InterstitialAd.load(
-      adUnitId: AdManager.interstitialAdUnitId,
-      request: AdRequest(),
-      adLoadCallback: InterstitialAdLoadCallback(
-        onAdLoaded: (ad) {
-          ad.fullScreenContentCallback = FullScreenContentCallback(
-            onAdDismissedFullScreenContent: (ad) {
-              ad.dispose();
-              interstitialAd = null;
-              loadInterstitialAd();
-              print("onAdDismissedFullScreenContent");
-            },
-          );
-          interstitialAd = ad;
-        },
-        onAdFailedToLoad: (err) {
-          print('Failed to load an interstitial ad: ${err.message}');
-        },
-      ),
-    );
-  }
 }

@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:phone_vibration_imessage/applovin_manager.dart';
+import 'package:phone_vibration_imessage/core/base/base_controller.dart';
+import 'package:phone_vibration_imessage/core/common/app_func.dart';
+import 'package:phone_vibration_imessage/routes/app_pages.dart';
 import 'package:get/get.dart';
 import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:vibration/vibration.dart';
 import '../../constants.dart';
-import '../../core/base/base_controller.dart';
-import '../../core/common/app_func.dart';
 import '../../core/local_storage/localStorageHelper.dart';
 import '../../core/theme/dimens.dart';
 import '../../in_app_manage.dart';
 import 'package:intl/intl.dart';
 
-import '../../routes/app_pages.dart';
-
 class SplashController extends BaseController {
+  RxBool isWelcome = false.obs;
 
   @override
   void onInit() {
@@ -25,6 +26,7 @@ class SplashController extends BaseController {
       Dimens.init(Get.context!);
     }
     Vibration.vibrate(duration: 1000, amplitude: 255);
+    ApplovinManager().initAppOpen();
     checkDirect();
     super.onInit();
   }
@@ -32,11 +34,18 @@ class SplashController extends BaseController {
   void checkDirect() async {
     DateFormat dateFormat = DateFormat("yyyy-MM-dd HH:mm:ss");
     String? data = await SharePreferencesHelper.getString(KEY_PURCHASE);
-    bool isWelcome = await SharePreferencesHelper.getBool(KEY_WELCOME) ?? false;
+    bool isLanguage = await SharePreferencesHelper.getBool(KEY_LANGUAGE) ?? false;
+    isWelcome.value =
+        await SharePreferencesHelper.getBool(KEY_WELCOME) ?? false;
     if (data == null || data == 'null') {
       AppFunc.setTimeout(() {
         IAPConnection().isAvailable = false;
-        Get.offAndToNamed(!isWelcome ? Routes.WELCOME : Routes.MAIN);
+        if ((!isWelcome.value || !isLanguage) && ApplovinManager().isInitialized) {
+          ApplovinManager().showAdIfReady();
+        }
+        AppFunc.setTimeout(() {
+          Get.offAndToNamed((!isWelcome.value || !isLanguage) ? Routes.LANGUAGE : Routes.MAIN);
+        }, 2000);
       }, 3000);
     } else {
       DateTime dateTime = dateFormat.parse(data ?? '');

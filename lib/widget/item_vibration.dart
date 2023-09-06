@@ -1,19 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:phone_vibration_imessage/ad_manager.dart';
+import 'package:phone_vibration_imessage/applovin_manager.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:phone_vibration_imessage/core/common/app_func.dart';
 import 'package:vibration/vibration.dart';
 
 import '../core/assets/app_assets.dart';
+import '../core/common/app_func.dart';
 import '../core/common/imagehelper.dart';
 import '../core/model/vibration_model.dart';
 import '../core/theme/textstyles.dart';
 import '../in_app_manage.dart';
+import '../language/i18n.g.dart';
 import '../routes/app_pages.dart';
 import '../screen/premium/premium_screen.dart';
 import '../screen/vibration/vibration_controller.dart';
 import '../utils/app_utils.dart';
 import '../utils/touchable.dart';
+import 'package:applovin_max/applovin_max.dart';
 
 class ItemVibration extends StatelessWidget {
   ItemVibration({Key? key, this.vibrationModel, this.controller, this.index})
@@ -25,30 +29,24 @@ class ItemVibration extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Touchable(
-      onTap: () {
-        if (!IAPConnection().isAvailable && vibrationModel?.isPremium == true) {
+      onTap: () async {
+        if (vibrationModel?.isPremium == true && !IAPConnection().isAvailable) {
           Vibration.cancel();
-          AppFunc.showAlertDialogConfirm(context,
-              message: 'Would you like to try this vibration once?',
-              callBack: () {
-                  goToScreen(PremiumScreen());
-              },
-              cancelCallback: () {
-                  controller?.rewardedAd?.show(onUserEarnedReward: (a,b){
-                    vibrationModel?.onTap?.call();
-                  });
-              });
+          Get.toNamed(Routes.PREMIUM);
         } else {
-          if ((index ?? 0) > 4 && (index ?? 0) < 10 && !IAPConnection().isAvailable){
-            controller?.interstitialAd?.show();
-            controller?.changeSelected(index ?? 0);
-            Vibration.cancel();
-            vibrationModel?.onTap?.call();
-          } else {
-            controller?.changeSelected(index ?? 0);
-            Vibration.cancel();
-            vibrationModel?.onTap?.call();
+          if ((index ?? 0) % 2 == 0 && !IAPConnection().isAvailable) {
+            bool isReady = (await AppLovinMAX.isInterstitialReady(
+                AdManager.interstitialAdUnitId))!;
+            print("show show show = $isReady");
+            if (isReady) {
+              AppLovinMAX.showInterstitial(AdManager.interstitialAdUnitId);
+            } else {
+              AppLovinMAX.loadInterstitial(AdManager.interstitialAdUnitId);
+            }
           }
+          controller?.changeSelected(index ?? 0);
+          Vibration.cancel();
+          vibrationModel?.onTap?.call();
         }
       },
       child: Container(
@@ -108,7 +106,7 @@ class ItemVibration extends StatelessWidget {
               height: 4.h,
             ),
             Text(
-              vibrationModel?.title ?? 'Sunny',
+              vibrationModel?.title ?? I18n().sunnyStr.tr,
               style: TextStyles.defaultStyle.setTextSize(10.sp),
             )
           ],

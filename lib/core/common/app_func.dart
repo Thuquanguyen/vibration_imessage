@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:phone_vibration_imessage/language/i18n.g.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -103,7 +104,10 @@ class AppFunc {
       {String? message, String? title}) {
     // set up the button
     Widget okButton = TextButton(
-      child: Text("OKay!",style: TextStyles.defaultStyle,),
+      child: Text(
+        "OKay!",
+        style: TextStyles.defaultStyle,
+      ),
       onPressed: () {
         Get.back();
       },
@@ -135,13 +139,19 @@ class AppFunc {
   }) {
     // set up the button
     Widget okButton = TextButton(
-      child:  Text("Unlock now",style: TextStyles.defaultStyle,),
+      child: Text(
+        I18n().unlockNowStr.tr,
+        style: TextStyles.defaultStyle,
+      ),
       onPressed: callBack,
     );
 
     // set up the button
     Widget viewAds = TextButton(
-      child:  Text("View ads",style: TextStyles.defaultStyle,),
+      child: Text(
+        I18n().viewAdsStr.tr,
+        style: TextStyles.defaultStyle,
+      ),
       onPressed: () {
         Get.back();
         cancelCallback?.call();
@@ -149,7 +159,10 @@ class AppFunc {
     );
 
     Widget cancelButton = TextButton(
-      child: Text("Cancel",style: TextStyles.defaultStyle,),
+      child: Text(
+        I18n().cancelStr.tr,
+        style: TextStyles.defaultStyle,
+      ),
       onPressed: () {
         Get.back();
       },
@@ -157,9 +170,11 @@ class AppFunc {
 
     // set up the AlertDialog
     AlertDialog alert = AlertDialog(
-      title: const Text("Hi! I'm Vibration"),
+      title: Text(I18n().hiIAmStr.tr),
       content: Text(message ?? ''),
-      actions: [okButton, viewAds ,cancelButton],
+      actions: cancelCallback == null
+          ? [okButton, cancelButton]
+          : callBack == null ? [viewAds, cancelButton] : [okButton, viewAds, cancelButton],
     );
 
     // show the dialog

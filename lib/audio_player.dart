@@ -1,7 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:phone_vibration_imessage/screen/vibration/vibration_controller.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:get/get.dart';
+
+import 'screen/vibration/vibration_controller.dart';
 
 class AudioPlayerVibration {
   static final AudioPlayerVibration _singleton =

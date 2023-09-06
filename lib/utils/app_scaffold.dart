@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:phone_vibration_imessage/utils/touchable.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
@@ -7,7 +8,6 @@ import '../core/assets/app_assets.dart';
 import '../core/common/imagehelper.dart';
 import '../core/theme/app_colors.dart';
 import '../core/theme/textstyles.dart';
-import 'touchable.dart';
 
 class AppbarAction {
   final Widget widgetAction;

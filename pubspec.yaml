@@ -67,6 +67,7 @@ dev_dependencies:
   in_app_purchase: ^3.1.7
   intl:
   recase: ^4.1.0
+  pageview_widget_indicator: ^0.0.4
   flutter_keyboard_visibility: ^5.1.0
   path_provider:
 #  store_redirect: ^2.0.0
@@ -76,7 +77,7 @@ dev_dependencies:
 #  google_fonts: ^4.0.5
   shared_preferences:
   flutter_share_me: ^1.4.0
-  google_mobile_ads: ^3.0.0
+  applovin_max: ^3.2.0
   flutter_staggered_grid_view:
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

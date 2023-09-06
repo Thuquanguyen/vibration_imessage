@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:phone_vibration_imessage/screen/language/language_binding.dart';
+import 'package:phone_vibration_imessage/screen/language/language_screen.dart';
+import 'package:phone_vibration_imessage/screen/main/main_binding.dart';
+import 'package:phone_vibration_imessage/screen/main/main_screen.dart';
+import 'package:phone_vibration_imessage/screen/more/more_binding.dart';
+import 'package:phone_vibration_imessage/screen/more/more_screen.dart';
+import 'package:phone_vibration_imessage/screen/music/music_binding.dart';
+import 'package:phone_vibration_imessage/screen/music/music_screen.dart';
+import 'package:phone_vibration_imessage/screen/vibration/vibration_screen.dart';
 import 'package:get/get.dart';
 
 import '../screen/information/information_binding.dart';
 import '../screen/information/information_screen.dart';
-import '../screen/main/main_binding.dart';
-import '../screen/main/main_screen.dart';
 import '../screen/meditate/meditate_binding.dart';
 import '../screen/meditate/meditate_screen.dart';
-import '../screen/more/more_binding.dart';
-import '../screen/more/more_screen.dart';
-import '../screen/music/music_binding.dart';
-import '../screen/music/music_screen.dart';
 import '../screen/not_vibration/not_vibration_binding.dart';
 import '../screen/not_vibration/not_vibration_screen.dart';
 import '../screen/premium/premium_binding.dart';
@@ -24,7 +27,6 @@ import '../screen/splash/splash_screen.dart';
 import '../screen/term/term_binding.dart';
 import '../screen/term/term_screen.dart';
 import '../screen/vibration/vibration_binding.dart';
-import '../screen/vibration/vibration_screen.dart';
 import '../screen/welcome/welcome_binding.dart';
 import '../screen/welcome/welcome_screen.dart';
 
@@ -53,7 +55,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.VIBRATION,
-      page: () => const VibrationScreen(),
+      page: () =>  VibrationScreen(),
       binding: VibrationBinding(),
     ),
     GetPage(
@@ -100,6 +102,11 @@ class AppPages {
       name: _Paths.MORE,
       page: () => const MoreScreen(),
       binding: MoreBinding(),
+    ),
+    GetPage(
+      name: _Paths.LANGUAGE,
+      page: () => const LanguageScreen(),
+      binding: LanguageBinding(),
     ),
   ];
 }

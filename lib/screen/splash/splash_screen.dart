@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:phone_vibration_imessage/core/assets/app_assets.dart';
+import 'package:phone_vibration_imessage/utils/app_scaffold.dart';
 import 'package:get/get.dart';
 
-import '../../core/assets/app_assets.dart';
 import '../../core/common/imagehelper.dart';
-import '../../utils/app_scaffold.dart';
 import 'splash_controller.dart';
 
 class SplashScreen extends GetView<SplashController> {
@@ -17,8 +17,8 @@ class SplashScreen extends GetView<SplashController> {
       controller.onInit();
     }
     return AppScaffold(
-      color: Color.fromRGBO(245, 245, 245, 1),
       paddingTop: 0,
+      color: Color.fromRGBO(245, 245, 245, 1),
       body: Container(
           child: ImageHelper.loadFromAsset(
         AppAssets.icSplat,

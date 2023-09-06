@@ -1,6 +1,8 @@
 import 'package:audio_wave/audio_wave.dart';
 import 'package:expandable_bottom_sheet/expandable_bottom_sheet.dart';
 import 'package:flutter/material.dart';
+import 'package:phone_vibration_imessage/ad_manager.dart';
+import 'package:phone_vibration_imessage/applovin_manager.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -8,9 +10,11 @@ import 'package:vibration/vibration.dart';
 import '../../core/assets/app_assets.dart';
 import '../../core/common/app_func.dart';
 import '../../core/common/imagehelper.dart';
+import '../../core/theme/app_colors.dart';
 import '../../core/theme/dimens.dart';
 import '../../core/theme/textstyles.dart';
 import '../../in_app_manage.dart';
+import '../../language/i18n.g.dart';
 import '../../routes/app_pages.dart';
 import '../../utils/app_scaffold.dart';
 import '../../utils/scrolling_text.dart';
@@ -19,12 +23,11 @@ import 'package:filling_slider/filling_slider.dart';
 import '../../widget/item_music.dart';
 import '../../widget/item_vibration.dart';
 import 'package:rive/rive.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'vibration_controller.dart';
+import 'package:applovin_max/applovin_max.dart';
 
 class VibrationScreen extends GetView<VibrationController> {
-  const VibrationScreen({Key? key}) : super(key: key);
-
+  VibrationScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
@@ -32,7 +35,6 @@ class VibrationScreen extends GetView<VibrationController> {
       appBarHeight: 0,
       hideAppBar: true,
       paddingTop: 0,
-      color: Colors.white,
       body: ExpandableBottomSheet(
         key: key,
         animationDurationExtend: const Duration(milliseconds: 500),
@@ -44,7 +46,7 @@ class VibrationScreen extends GetView<VibrationController> {
           children: [
             Obx(() => ImageHelper.loadFromAsset(
                 controller.backgroundColor.value.isEmpty
-                    ? AppAssets.imgBacground
+                    ? AppAssets.imgDry
                     : controller.backgroundColor.value,
                 width: Dimens.screenWidth,
                 height: Dimens.screenHeight,
@@ -52,35 +54,7 @@ class VibrationScreen extends GetView<VibrationController> {
             Column(
               children: [
                 SizedBox(
-                  height: Dimens.topSafeAreaPadding,
-                ),
-                if (!IAPConnection().isAvailable)
-                  Obx(() => Visibility(
-                        child: Align(
-                          alignment: Alignment.topCenter,
-                          child: Container(
-                            width:
-                                controller.bannerAd.value.size.width.toDouble(),
-                            height: controller.bannerAd.value.size.height
-                                .toDouble(),
-                            child: AdWidget(ad: controller.bannerAd.value),
-                          ),
-                        ),
-                        visible: controller.isLoadAds.value,
-                      )),
-                SizedBox(
-                  height: 10.h,
-                ),
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 100.w),
-                  height: 20.h,
-                  child: Obx(() => ScrollingText(
-                        text: controller.song.value,
-                        textStyle: TextStyles.body1.setColor(Colors.white),
-                      )),
-                ),
-                SizedBox(
-                  height: 20.h,
+                  height: 85.h,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -106,8 +80,7 @@ class VibrationScreen extends GetView<VibrationController> {
                                   controller.progress.value = a;
                                   if ((a == 0.5 || a == 0.85) &&
                                       (!IAPConnection().isAvailable)) {
-                                    controller.rewardedAd
-                                        ?.show(onUserEarnedReward: (a, b) {});
+                                    Get.toNamed(Routes.PREMIUM);
                                   }
                                   Vibration.vibrate(
                                       amplitude: (a * 255).toInt(),
@@ -121,12 +94,12 @@ class VibrationScreen extends GetView<VibrationController> {
                                   height: 220,
                                   child: Column(
                                     children: [
-                                      // if (!IAPConnection().isAvailable)
-                                      //   ImageHelper.loadFromAsset(
-                                      //       AppAssets.icPremium,
-                                      //       width: 12.w,
-                                      //       height: 12.w),
-                                      Text("High",
+                                      if (!IAPConnection().isAvailable)
+                                        ImageHelper.loadFromAsset(
+                                            AppAssets.icPremium,
+                                            width: 12.w,
+                                            height: 12.w),
+                                      Text(I18n().highStr.tr,
                                           style: TextStyles.label2.copyWith(
                                               color:
                                                   controller.progress.value >=
@@ -134,13 +107,13 @@ class VibrationScreen extends GetView<VibrationController> {
                                                       ? Colors.white
                                                       : Colors.black)),
                                       const Spacer(),
-                                      // if (!IAPConnection().isAvailable)
-                                      //   ImageHelper.loadFromAsset(
-                                      //       AppAssets.icPremium,
-                                      //       width: 12.w,
-                                      //       height: 12.w),
+                                      if (!IAPConnection().isAvailable)
+                                        ImageHelper.loadFromAsset(
+                                            AppAssets.icPremium,
+                                            width: 12.w,
+                                            height: 12.w),
                                       Text(
-                                        "Medium",
+                                        I18n().mediumStr.tr,
                                         style: TextStyles.label2.copyWith(
                                             color:
                                                 controller.progress.value >= 0.5
@@ -149,7 +122,7 @@ class VibrationScreen extends GetView<VibrationController> {
                                       ),
                                       const Spacer(),
                                       Text(
-                                        "Low",
+                                        I18n().lowStr.tr,
                                         style: TextStyles.label2.copyWith(
                                             color: controller.progress.value >=
                                                     0.08
@@ -166,8 +139,19 @@ class VibrationScreen extends GetView<VibrationController> {
                     ),
                   ],
                 ),
+                SizedBox(
+                  height: 20.h,
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 100.w),
+                  height: 30.h,
+                  child: Obx(() => ScrollingText(
+                        text: controller.song.value,
+                        textStyle: TextStyles.body1,
+                      )),
+                ),
               ],
-            ),
+            )
           ],
         ),
         persistentHeader: Container(
@@ -189,7 +173,7 @@ class VibrationScreen extends GetView<VibrationController> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Vibration Patterns',
+                      I18n().vibrationPatternsStr.tr,
                       style: TextStyles.body3
                           .setTextSize(12.sp)
                           .setColor(Colors.black)
@@ -199,7 +183,7 @@ class VibrationScreen extends GetView<VibrationController> {
                       height: 2.h,
                     ),
                     Text(
-                      'Please choose vibration patterns below',
+                      I18n().subVibrationPatternsStr.tr,
                       style: TextStyles.defaultStyle.setTextSize(10.sp),
                     )
                   ],
@@ -208,13 +192,13 @@ class VibrationScreen extends GetView<VibrationController> {
               Touchable(
                   onTap: () async {
                     Vibration.cancel();
-                    // if (controller.interstitialAd != null && !IAPConnection().isAvailable) {
-                    //   controller.interstitialAd!.show();
-                    // }
-                    // AppFunc.showAlertDialog(context,
-                    //     title: 'Coming soon!',
-                    //     message:
-                    //         'The feature to initiate a strong vibration mode just for you.\n\nPlease update the app regularly to keep an eye on this upcoming feature!');
+                    bool isReady = (await AppLovinMAX.isInterstitialReady(
+                        AdManager.interstitialAdUnitId))!;
+                    if (isReady && !IAPConnection().isAvailable) {
+                      AppLovinMAX.showInterstitial(AdManager.interstitialAdUnitId);
+                    } else {
+                      AppLovinMAX.loadInterstitial(AdManager.interstitialAdUnitId);
+                    }
                   },
                   child: Container(
                     decoration: BoxDecoration(
@@ -230,16 +214,9 @@ class VibrationScreen extends GetView<VibrationController> {
                     child: Row(
                       children: [
                         Text(
-                          "Stop Vibration",
+                          I18n().stopVibrationStr.tr,
                           style: TextStyles.defaultStyle.setTextSize(12.sp),
                         ),
-                        // if (!IAPConnection().isAvailable)
-                        //   SizedBox(
-                        //     width: 5.w,
-                        //   ),
-                        // if (!IAPConnection().isAvailable)
-                        //   ImageHelper.loadFromAsset(AppAssets.icPremium,
-                        //       width: 12.w, height: 12.w)
                       ],
                     ),
                   ))

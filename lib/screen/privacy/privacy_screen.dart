@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:phone_vibration_imessage/screen/privacy/privacy_controller.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:flutter_html/flutter_html.dart';
-import 'package:phone_vibration_imessage/screen/privacy/privacy_controller.dart';
 
 import '../../utils/app_scaffold.dart';
 
