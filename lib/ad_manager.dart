@@ -10,13 +10,9 @@ class AdManager {
 
   AdManager._internal();
 
-  static String get sdkKey {
-    return "hSsRnQ4Zzz5gbaWTKEftwpHxlJucNOpkZeBvEPnogcgWAAB9ERVIFHNG_WHhJTkHCh5AyFcRTF6kN711_nKE3d";
-  }
-
-static String get bannerAdUnitId {
+  static String get bannerAdUnitId {
   if (Platform.isAndroid) {
-    return '908c39ecc0fc9c86';
+    return 'ca-app-pub-3449522729010597/1504291034';
   } else if (Platform.isIOS) {
     return 'ca-app-pub-3940256099942544/2934735716';
   } else {
@@ -26,7 +22,7 @@ static String get bannerAdUnitId {
 
 static String get interstitialAdUnitId {
   if (Platform.isAndroid) {
-    return "c340d6d8d6144059";
+    return "ca-app-pub-3449522729010597/7826156803";
   } else if (Platform.isIOS) {
     return "ca-app-pub-3940256099942544/4411468910";
   } else {
@@ -36,7 +32,7 @@ static String get interstitialAdUnitId {
 
 static String get rewardedAdUnitId {
   if (Platform.isAndroid) {
-    return "654a971e1e2963fe";
+    return "ca-app-pub-3449522729010597/5199993467";
   } else if (Platform.isIOS) {
     return "ca-app-pub-3940256099942544/1712485313";
   } else {
@@ -44,9 +40,9 @@ static String get rewardedAdUnitId {
   }
 }
 
-  static String get openAppAdUnitId {
+  static String get nativeAppAdUnitId {
     if (Platform.isAndroid) {
-      return "750b0aca9299a7d7";
+      return "ca-app-pub-3449522729010597/1130006070";
     } else if (Platform.isIOS) {
       return "ca-app-pub-3940256099942544/1712485313";
     } else {
@@ -54,13 +50,63 @@ static String get rewardedAdUnitId {
     }
   }
 
-  static String get nativeAppAdUnitId {
+  static String get openAppAdUnitId {
     if (Platform.isAndroid) {
-      return "6c0c103fb6cd90e6";
+      return "ca-app-pub-3449522729010597/7798236641";
     } else if (Platform.isIOS) {
       return "ca-app-pub-3940256099942544/1712485313";
     } else {
       throw new UnsupportedError("Unsupported platform");
     }
   }
+
+// static String get bannerAdUnitId {
+//   if (Platform.isAndroid) {
+//     return 'ca-app-pub-3940256099942544/6300978111';
+//   } else if (Platform.isIOS) {
+//     return 'ca-app-pub-3940256099942544/2934735716';
+//   } else {
+//     throw new UnsupportedError('Unsupported platform');
+//   }
+// }
+//
+// static String get interstitialAdUnitId {
+//   if (Platform.isAndroid) {
+//     return "ca-app-pub-3940256099942544/1033173712";
+//   } else if (Platform.isIOS) {
+//     return "ca-app-pub-3940256099942544/4411468910";
+//   } else {
+//     throw new UnsupportedError("Unsupported platform");
+//   }
+// }
+//
+// static String get rewardedAdUnitId {
+//   if (Platform.isAndroid) {
+//     return "ca-app-pub-3940256099942544/5224354917";
+//   } else if (Platform.isIOS) {
+//     return "ca-app-pub-3940256099942544/1712485313";
+//   } else {
+//     throw new UnsupportedError("Unsupported platform");
+//   }
+// }
+//
+//   static String get nativeAppAdUnitId {
+//     if (Platform.isAndroid) {
+//       return "ca-app-pub-3940256099942544/2247696110";
+//     } else if (Platform.isIOS) {
+//       return "ca-app-pub-3940256099942544/1712485313";
+//     } else {
+//       throw new UnsupportedError("Unsupported platform");
+//     }
+//   }
+//
+//   static String get openAppAdUnitId {
+//     if (Platform.isAndroid) {
+//       return "ca-app-pub-3940256099942544/3419835294";
+//     } else if (Platform.isIOS) {
+//       return "ca-app-pub-3940256099942544/1712485313";
+//     } else {
+//       throw new UnsupportedError("Unsupported platform");
+//     }
+//   }
 }

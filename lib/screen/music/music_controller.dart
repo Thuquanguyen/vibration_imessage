@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
 import '../../ad_manager.dart';
-import '../../applovin_manager.dart';
+import '../../admod_handle.dart';
 import '../../audio_player.dart';
 import '../../core/assets/app_assets.dart';
 import '../../core/base/base_controller.dart';
@@ -17,7 +17,7 @@ class MusicController extends BaseController {
         isSelected: false,
         size: 1.1,
         thumb: AppAssets.img1,
-        isPremium: false),
+        ),
     MusicModel(
         title: 'Forever',
         onTab: () {},
@@ -25,7 +25,7 @@ class MusicController extends BaseController {
         isSelected: false,
         size: 2.7,
         thumb: AppAssets.img2,
-        isPremium: false),
+        ),
     MusicModel(
         title: 'Fur Elise Various Artists',
         onTab: () {},
@@ -34,7 +34,7 @@ class MusicController extends BaseController {
         isSelected: false,
         size: 3,
         thumb: AppAssets.img3,
-        isPremium: false),
+        ),
     MusicModel(
         title: 'Miss You I So Much',
         onTab: () {},
@@ -43,7 +43,7 @@ class MusicController extends BaseController {
         isSelected: false,
         size: 3.1,
         thumb: AppAssets.img4,
-        isPremium: false),
+        ),
     MusicModel(
         title: 'River Flows In You',
         onTab: () {},
@@ -52,7 +52,7 @@ class MusicController extends BaseController {
         isSelected: false,
         size: 2.9,
         thumb: AppAssets.img5,
-        isPremium: false),
+        ),
     MusicModel(
         title: 'Romeo Juliette',
         onTab: () {},
@@ -60,7 +60,7 @@ class MusicController extends BaseController {
         url: "https://storage.googleapis.com/vibrate/Romeo%20Juliette.mp3",
         size: 2.2,
         thumb: AppAssets.img6,
-        isPremium: true),
+        ),
     MusicModel(
         title: 'Secret Garden',
         onTab: () {},
@@ -68,7 +68,7 @@ class MusicController extends BaseController {
         isSelected: false,
         size: 2.7,
         thumb: AppAssets.img7,
-        isPremium: true),
+        ),
     MusicModel(
         title: 'Song From Secret Garden',
         onTab: () {},
@@ -77,7 +77,7 @@ class MusicController extends BaseController {
             "https://storage.googleapis.com/vibrate/Song%20From%20Secret%20Garden.mp3",
         size: 3.3,
         thumb: AppAssets.img8,
-        isPremium: true),
+        ),
     MusicModel(
         title: 'The Day Dream',
         onTab: () {},
@@ -85,14 +85,14 @@ class MusicController extends BaseController {
         url: "https://storage.googleapis.com/vibrate/The%20Day%20Dream.mp3",
         size: 3.1,
         thumb: AppAssets.img9,
-        isPremium: true),
+        ),
     MusicModel(
         title: 'Music Premium 1',
         onTab: () {},
         isSelected: false,
         url: "https://storage.googleapis.com/vibrate/Music%20Cover%201.mp3",
         size: 8.9,
-        isPremium: true),
+        ),
     MusicModel(
         title: 'Music Premium 2',
         onTab: () {},
@@ -100,7 +100,7 @@ class MusicController extends BaseController {
         url: "https://storage.googleapis.com/vibrate/Mucsic%20Cover%202.mp3",
         size: 3.7,
         thumb: AppAssets.img10,
-        isPremium: true),
+        ),
     MusicModel(
         title: 'Music Premium 3',
         onTab: () {},
@@ -108,15 +108,18 @@ class MusicController extends BaseController {
         isSelected: false,
         size: 5.2,
         thumb: AppAssets.img11,
-        isPremium: true),
+        ),
   ].obs;
 
   RxBool isLoadAds = false.obs;
   RxBool isLoadAdsBottom = false.obs;
+  RxInt indexOld = 0.obs;
 
   @override
   void onInit() {
-    ApplovinManager().initBanner();
+    if(AdmodHandle().ads.isLimit == false){
+      AdmodHandle().loadAdBanner();
+    }
     super.onInit();
   }
 
@@ -130,6 +133,7 @@ class MusicController extends BaseController {
       }
       listMusics[index].isSelected = true;
     }
+    indexOld.value = index;
     listMusics.refresh();
   }
 }

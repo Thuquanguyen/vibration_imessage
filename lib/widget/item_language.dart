@@ -21,37 +21,30 @@ class ItemLanguage extends StatelessWidget {
           AppTranslations.updateLocale(langCode: languageModel?.key ?? 'en');
         },
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 0, vertical: 15),
-          margin: EdgeInsets.symmetric(horizontal: 10),
-          decoration: BoxDecoration(
-              border:
-                  Border(bottom: BorderSide(color: Colors.white, width: 1))),
+          decoration: const BoxDecoration(
+              border: Border(
+                  bottom: BorderSide(color: Colors.white, width: 1))),
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
           child: Row(
             children: [
-              Icon(
-                Icons.check_outlined,
-                color: languageModel?.isChecked == true
-                    ? Colors.red
-                    : Colors.transparent,
-              ),
-              SizedBox(
-                width: 15,
-              ),
               Expanded(
-                  child: Text(
-                languageModel?.name ?? '',
-                style: TextStyles.body1.setColor(
-                    languageModel?.isChecked == true
-                        ? Colors.red
-                        : Colors.white),
+                  child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    languageModel?.name ?? '',
+                    style: TextStyles.body1.setColor(Colors.white),
+                  ),
+                  Text(
+                    languageModel?.subName ?? '',
+                    style: TextStyles.body1.setColor(Colors.white),
+                  )
+                ],
               )),
-              Text(
-                languageModel?.name ?? '',
-                style: TextStyles.body1.setColor(
-                    languageModel?.isChecked == true
-                        ? Colors.red
-                        : Colors.white),
-              )
+              Icon(languageModel?.isChecked == true
+                  ? Icons.radio_button_checked
+                  : Icons.radio_button_unchecked,color: Colors.white,)
             ],
           ),
         ));

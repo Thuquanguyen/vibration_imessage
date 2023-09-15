@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:phone_vibration_imessage/language/i18n.g.dart';
 import 'package:get/get.dart';
-
-import '../../in_app_manage.dart';
 import '../../utils/app_scaffold.dart';
 import 'information_controller.dart';
 

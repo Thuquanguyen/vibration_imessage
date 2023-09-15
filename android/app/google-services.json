@@ -1,38 +1,30 @@
 {
   "project_info": {
-    "project_number": "823294190283",
-    "project_id": "vibrator-strong---imassa-629c8",
-    "storage_bucket": "vibrator-strong---imassa-629c8.appspot.com"
+    "project_number": "229287654802",
+    "firebase_url": "https://vibrator-strong---imassa-7d950-default-rtdb.firebaseio.com",
+    "project_id": "vibrator-strong---imassa-7d950",
+    "storage_bucket": "vibrator-strong---imassa-7d950.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:823294190283:android:f1f7b4d6e515d3364c314e",
+        "mobilesdk_app_id": "1:229287654802:android:060173a3af03d63e407d4b",
         "android_client_info": {
           "package_name": "com.vibrator.massage.ai.phone_vibration_imessage"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "823294190283-kktsikg7b9ie6sj6vihcprq41lkv7ljp.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCBZfj-9sDsg1vlN6cXl-kGyxI962lUcl0"
+          "current_key": "AIzaSyBr5pvxGdwTmpfT9Dt6c_iljr-vM-XOAtc"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "823294190283-kktsikg7b9ie6sj6vihcprq41lkv7ljp.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
-      }
+      },
+      "admob_app_id": "ca-app-pub-3449522729010597~7143630525"
     }
   ],
   "configuration_version": "1"
