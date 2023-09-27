@@ -6,6 +6,7 @@ import '../../audio_player.dart';
 import '../../core/assets/app_assets.dart';
 import '../../core/base/base_controller.dart';
 import '../../core/model/music_model.dart';
+import '../../in_app_manage.dart';
 
 class MeditateController extends BaseController {
   RxList<MusicModel> listMusics = [
@@ -52,7 +53,8 @@ class MeditateController extends BaseController {
         isSelected: false,
         url: "https://storage.googleapis.com/meditation_music/Nature.mp3",
         size: 3.3,
-        thumb: AppAssets.meditation6,),
+        thumb: AppAssets.meditation6,
+        isPremium: true),
     MusicModel(
         title:
             'Peaceful Garden - Healing Light Piano for meditation, zen, landsca',
@@ -61,7 +63,8 @@ class MeditateController extends BaseController {
             "https://storage.googleapis.com/meditation_music/Peaceful%20Garden%20-%20Healing%20Light%20Piano%20for%20meditation%2C%20zen%2C%20landsca.mp3",
         isSelected: false,
         size: 5.5,
-        thumb: AppAssets.meditation7,),
+        thumb: AppAssets.meditation7,
+        isPremium: true),
     MusicModel(
         title: 'Piano Moment',
         onTab: () {},
@@ -69,7 +72,8 @@ class MeditateController extends BaseController {
         url:
             "https://storage.googleapis.com/meditation_music/Piano%20Moment.mp3",
         size: 8.3,
-        thumb: AppAssets.meditation8,),
+        thumb: AppAssets.meditation8,
+        isPremium: true),
     MusicModel(
         title: 'Please Calm My Mind',
         onTab: () {},
@@ -77,7 +81,8 @@ class MeditateController extends BaseController {
         url:
             "https://storage.googleapis.com/meditation_music/Please%20Calm%20My%20Mind.mp3",
         size: 5.3,
-        thumb: AppAssets.meditation9,),
+        thumb: AppAssets.meditation9,
+        isPremium: true),
     MusicModel(
         thumb: AppAssets.meditation10,
         title: 'Reflected Light',
@@ -85,7 +90,8 @@ class MeditateController extends BaseController {
         isSelected: false,
         url:
             "https://storage.googleapis.com/meditation_music/Reflected%20Light.mp3",
-        size: 6.9,),
+        size: 6.9,
+        isPremium: true),
     MusicModel(
         thumb: AppAssets.meditation11,
         title: 'Relaxing',
@@ -100,7 +106,8 @@ class MeditateController extends BaseController {
         url:
             "https://storage.googleapis.com/meditation_music/Slow%20Motion.mp3",
         isSelected: false,
-        size: 4.1,),
+        size: 4.1,
+        isPremium: true),
     MusicModel(
         thumb: AppAssets.meditation13,
         title: 'The Cradle of Your Soul',
@@ -108,7 +115,8 @@ class MeditateController extends BaseController {
         url:
             "https://storage.googleapis.com/meditation_music/The%20Cradle%20of%20Your%20Soul.mp3",
         isSelected: false,
-        size: 5.4),
+        size: 5.4,
+        isPremium: true),
     MusicModel(
         thumb: AppAssets.meditation14,
         title: 'Tuesday (Glitch Soft Hip-hop)',
@@ -116,19 +124,25 @@ class MeditateController extends BaseController {
         url:
             "https://storage.googleapis.com/meditation_music/Tuesday%20(Glitch%20Soft%20Hip-hop).mp3",
         isSelected: false,
-        size: 3.9),
+        size: 3.9,
+        isPremium: true),
   ].obs;
 
   RxBool isLoadAds = false.obs;
   RxBool isLoadAdsBottom = false.obs;
-  RxInt indexOld = 0.obs;
+  RxInt indexOld = 100.obs;
 
   @override
   void onInit() {
+    if(IAPConnection().isAvailable){
+      for(int i = 0;i< listMusics.length;i++){
+        listMusics[i].isPremium = false;
+      }
+      listMusics.refresh();
+    }
     if(AdmodHandle().ads.isLimit == false){
       AdmodHandle().loadAdBanner2();
     }
-
     super.onInit();
   }
 

@@ -48,8 +48,8 @@ android {
         applicationId "com.vibrator.massage.ai.phone_vibration_imessage"
         minSdkVersion 20
         targetSdkVersion flutter.targetSdkVersion
-        versionCode 24
-        versionName "1.0.1"
+        versionCode 26
+        versionName "1.0.2"
         multiDexEnabled true
         ndk {
             abiFilters 'x86', 'x86_64', 'armeabi', 'armeabi-v7a', 'mips', 'mips64', 'arm64-v8a'

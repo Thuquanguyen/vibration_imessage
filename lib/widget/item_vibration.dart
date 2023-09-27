@@ -30,7 +30,13 @@ class ItemVibration extends StatelessWidget {
   Widget build(BuildContext context) {
     return Touchable(
       onTap: () async {
-        if(AdmodHandle().ads.isLimit == false && AdmodHandle().isShowInter && !IAPConnection().isAvailable){
+        if (vibrationModel?.isPremium == true) {
+          Get.toNamed(Routes.PREMIUM);
+          return;
+        }
+        if (AdmodHandle().ads.isLimit == false &&
+            AdmodHandle().isShowInter &&
+            !IAPConnection().isAvailable) {
           AdmodHandle().loadAdInter();
           if ((index ?? 0) % 2 == 0 &&
               AdmodHandle().interstitialAd != null &&
@@ -38,7 +44,6 @@ class ItemVibration extends StatelessWidget {
             // show ads
             showLoadingAds();
             AppFunc.setTimeout(() {
-              hideLoadingAds();
               AdmodHandle().interstitialAd?.show();
             }, 2000);
           }
@@ -79,6 +84,21 @@ class ItemVibration extends StatelessWidget {
                           height: 18.w),
                     ),
                   ),
+                  if(vibrationModel?.isPremium == true)
+                  Positioned(
+                    child: Container(
+                      padding: EdgeInsets.only(left: 5,top: 3,right: 3,bottom: 3),
+                      margin: EdgeInsets.only(top: 1,right: 1),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20))
+                      ),
+                      child: ImageHelper.loadFromAsset(AppAssets.icPremium,
+                          width: 10, height: 10),
+                    ),
+                    top: 0,
+                    right: 0,
+                  )
                 ],
               ),
             ),

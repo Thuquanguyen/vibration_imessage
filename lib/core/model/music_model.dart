@@ -5,6 +5,7 @@ class MusicModel{
   double? size;
   Function? onTab;
   bool? isSelected;
+  bool? isPremium;
 
-  MusicModel({this.title,this.thumb,this.onTab,this.isSelected,this.url,this.size});
+  MusicModel({this.title,this.thumb,this.onTab,this.isSelected,this.url,this.size,this.isPremium = false});
 }

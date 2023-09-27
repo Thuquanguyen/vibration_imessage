@@ -26,6 +26,10 @@ class ItemMusicList extends StatelessWidget {
     return Touchable(
       onTap: () async {
         // show ads
+        if(musicModel?.isPremium == true){
+          Get.toNamed(Routes.PREMIUM);
+          return;
+        }
         if (AdmodHandle().ads.isLimit == false && AdmodHandle().isShowInter) {
           AdmodHandle().loadAdInter();
           if ((index ?? 0) % 2 == 0 &&
@@ -33,7 +37,6 @@ class ItemMusicList extends StatelessWidget {
             // show ads
             showLoadingAds();
             AppFunc.setTimeout(() {
-              hideLoadingAds();
               AdmodHandle().interstitialAd?.show();
             }, 2000);
           }else{
@@ -99,6 +102,10 @@ class ItemMusicList extends StatelessWidget {
                 ),
               ],
             )),
+            if(musicModel?.isPremium == true)
+              ImageHelper.loadFromAsset(AppAssets.icPremium,
+                  width: 20, height: 20,tintColor: Colors.lime),
+            SizedBox(width: 10,),
             Icon(
               (musicModel?.isSelected ?? false)
                   ? Icons.pause_circle
