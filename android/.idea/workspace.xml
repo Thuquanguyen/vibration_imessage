@@ -4,24 +4,32 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a56858f7-b5a9-4ed5-83af-f55b78249254" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../lib/widget/blink_button.dart" afterDir="false" />
+    <list default="true" id="235b55d9-2f13-4d2c-9278-d5030a91b4e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/release/app-release.aab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/app-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.aab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/ad_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/ad_manager.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/admod_handle.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/admod_handle.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/core/model/music_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/core/model/music_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/screen/language/language_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/language/language_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/screen/language/language_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/language/language_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/screen/meditate/meditate_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/meditate/meditate_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/screen/meditate/meditate_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/meditate/meditate_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/screen/more/more_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/more/more_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/screen/more/more_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/more/more_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/screen/music/music_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/music/music_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/screen/music/music_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/music/music_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/screen/sleep/sleep_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/sleep/sleep_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/screen/sleep/sleep_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/sleep/sleep_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/screen/splash/splash_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/splash/splash_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/screen/splash/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/splash/splash_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/screen/vibration/vibration_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/vibration/vibration_controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/screen/vibration/vibration_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/vibration/vibration_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/screen/welcome/welcome_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/welcome/welcome_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/screen/welcome/welcome_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screen/welcome/welcome_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/widget/item_music_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/widget/item_music_list.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/widget/item_vibration.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/widget/item_vibration.dart" afterDir="false" />
     </list>
@@ -30,7 +38,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[5e8ea054]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RFCW40M2K1D]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -45,7 +53,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2Vy75bvrzCoPm3xvU5sOlmapSEm" />
+  <component name="ProjectId" id="2WvjBMpgoMgrNqZ9XidFXgBfQCq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -60,7 +68,7 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "memory.settings.postsync.last.time.stamp": "1695796315619",
+    "memory.settings.postsync.last.time.stamp": "1697619829180",
     "show.migrate.to.gradle.popup": "false"
   },
   "keyToStringList": {
@@ -132,11 +140,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a56858f7-b5a9-4ed5-83af-f55b78249254" name="Changes" comment="" />
-      <created>1695796287124</created>
+      <changelist id="235b55d9-2f13-4d2c-9278-d5030a91b4e8" name="Changes" comment="" />
+      <created>1697619810274</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1695796287124</updated>
+      <updated>1697619810274</updated>
     </task>
     <servers />
   </component>

@@ -154,9 +154,6 @@ class SleepController extends BaseController {
       }
       listMusics.refresh();
     }
-    if (AdmodHandle().ads.isLimit == false) {
-      AdmodHandle().loadAdBanner3();
-    }
     super.onInit();
   }
 

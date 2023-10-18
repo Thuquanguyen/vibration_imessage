@@ -140,9 +140,6 @@ class MeditateController extends BaseController {
       }
       listMusics.refresh();
     }
-    if(AdmodHandle().ads.isLimit == false){
-      AdmodHandle().loadAdBanner2();
-    }
     super.onInit();
   }
 

@@ -75,11 +75,6 @@ class VibrationScreen extends GetView<VibrationController> {
                                 onChange: (a, b) {
                                   controller.progress.value = a;
                                   if ((a == 0.5 || a == 0.85) && !IAPConnection().isAvailable) {
-                                    // showLoadingAds();
-                                    // AdmodHandle().loadAdInter();
-                                    // AppFunc.setTimeout(() {
-                                    //   AdmodHandle().interstitialAd?.show();
-                                    // }, 2000);
                                     Get.toNamed(Routes.PREMIUM);
                                   }else{
                                     Vibration.vibrate(

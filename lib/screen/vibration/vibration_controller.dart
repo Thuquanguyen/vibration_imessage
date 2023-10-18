@@ -477,12 +477,6 @@ class VibrationController extends BaseController {
       vibrations.refresh();
     }
     NotificationService().showNotification();
-    if(AdmodHandle().ads.isLimit == false){
-      AdmodHandle().loadAdInter();
-      AppOpenAdManager appOpenAdManager = AppOpenAdManager()..loadAd();
-      AppLifecycleReactor(appOpenAdManager: appOpenAdManager)
-          .listenToAppStateChanges();
-    }
     super.onInit();
   }
 

@@ -131,9 +131,6 @@ class MusicController extends BaseController {
       }
       listMusics.refresh();
     }
-    if(AdmodHandle().ads.isLimit == false){
-      AdmodHandle().loadAdBanner();
-    }
     super.onInit();
   }
 

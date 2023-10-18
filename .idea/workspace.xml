@@ -5,23 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2697bf83-7544-49cb-a959-0dcf9288ceb6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/widget/blink_button.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/release/app-release.aab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/release/app-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/release/app-release.aab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ad_manager.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ad_manager.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/admod_handle.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/admod_handle.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/model/music_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/model/music_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/language/language_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/language/language_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/language/language_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/language/language_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screen/meditate/meditate_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/meditate/meditate_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/meditate/meditate_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/meditate/meditate_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/more/more_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/more/more_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/more/more_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/more/more_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screen/music/music_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/music/music_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/music/music_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/music/music_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screen/sleep/sleep_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/sleep/sleep_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/sleep/sleep_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/sleep/sleep_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/splash/splash_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/splash/splash_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/splash/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/splash/splash_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screen/vibration/vibration_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/vibration/vibration_controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screen/vibration/vibration_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/vibration/vibration_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/welcome/welcome_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/welcome/welcome_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/welcome/welcome_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/welcome/welcome_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/widget/item_music_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/item_music_list.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/widget/item_vibration.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/item_vibration.dart" afterDir="false" />
     </list>
