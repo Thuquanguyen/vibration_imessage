@@ -34,7 +34,7 @@ dev_dependencies:
   cupertino_icons: ^1.0.5
   flutter_easyloading: ^3.0.5
   image_picker: ^0.8.0+1
-  cached_network_image: ^3.2.0
+  cached_network_image: ^3.3.1
   flutter_svg: ^1.0.3
   flutter_screenutil: ^5.5.3+2
   permission_handler: ^10.2.0
@@ -64,7 +64,7 @@ dev_dependencies:
   flutter_html:
   filling_slider: ^0.0.3
   flutter_custom_clippers: ^2.1.0
-  in_app_purchase: ^3.1.7
+  in_app_purchase: ^3.1.13
   intl:
   recase: ^4.1.0
   pageview_widget_indicator: ^0.0.4

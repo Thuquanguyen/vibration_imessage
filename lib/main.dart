@@ -22,6 +22,17 @@ void main() {
     FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
     FlutterNativeSplash.remove();
     NotificationService().initializePlatformNotifications();
+    try {
+      await Firebase.initializeApp(
+          options: const FirebaseOptions(
+              apiKey: 'AIzaSyD_meMSLKXHhaQDWcwWutqvNe5weePtkgg',
+              appId: '1:708978695943:android:90a71c31bc76e87792efa2',
+              messagingSenderId: '708978695943',
+              projectId: 'vibration-strong-i-message-u'));
+    } catch (e) {
+      print("eeeerrrr = ${e.toString()}");
+    }
+    FirebaseDatabase.instance;
     AppFunc.initLoadingStyle();
     MobileAds.instance.initialize();
   }

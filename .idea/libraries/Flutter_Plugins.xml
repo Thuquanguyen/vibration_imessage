@@ -26,7 +26,6 @@
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/path_provider_windows-2.1.7" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/shared_preferences_windows-2.3.0" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/url_launcher-6.1.12" />
-      <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/in_app_purchase-3.1.7" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/just_audio_web-0.4.8" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/url_launcher_windows-3.0.7" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/path_provider-2.0.15" />
@@ -69,6 +68,7 @@
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/firebase_database_web-0.2.3+5" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/google_mobile_ads-2.4.0" />
       <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/firebase_database-10.2.5" />
+      <root url="file://$PROJECT_DIR$/../.pub-cache/hosted/pub.dev/in_app_purchase-3.1.13" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
